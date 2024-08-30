@@ -2,6 +2,7 @@ import React from 'react'
 import { IoIosArrowDown } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
 import { RiAccountCircleLine } from "react-icons/ri";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
@@ -11,8 +12,8 @@ const Navbar = () => {
 
         <h2 className='text-4xl cursor-pointer'>V<span className='text-webGreen'>O</span>D</h2>
         <ul className='flex items-center gap-5 font-medium'>
-          <li className='border-b-2 border-transparent hover:border-webGreen cursor-pointer'>Home</li>
-          <li className='border-b-2 border-transparent hover:border-webGreen flex items-center gap-1 cursor-pointer'>Categories <IoIosArrowDown /> </li>
+          <Link to="/" className='border-b-2 border-transparent hover:border-webGreen cursor-pointer'>Home</Link>
+          <Link to="/categories" className='border-b-2 border-transparent hover:border-webGreen flex items-center gap-1 cursor-pointer'>Categories <IoIosArrowDown /> </Link>
         </ul>
       </div>
 

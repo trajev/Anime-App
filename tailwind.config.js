@@ -11,7 +11,7 @@ export default {
         monteserrat: ['Montserrat', 'sans']
       },
       colors:{
-        webGreen: "#53F139",
+        webGreen: "orange",
         webBlue: "#0C0B1F",
       }
 
